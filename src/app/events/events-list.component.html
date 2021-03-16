@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="container-fluid">
+    <h1>Upcoming Angular Events</h1>
+  </div>
+  <hr>
+  <div class="well">
+    <event-thumbnail
+      [events]="events"
+      #thumbnail
+      (eventClick)="handleClickedEvent($event)"
+    ></event-thumbnail>
+    <button (click)="thumbnail.handleRefs()">Refs</button>
+  </div>
+</div>

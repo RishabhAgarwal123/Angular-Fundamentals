@@ -1,0 +1,12 @@
+<div class="well hoverwell thumbnail">
+    <div class="col-md-6" *ngFor="let events of events">
+        <div>Event Name: {{ events.name }}</div>
+        <div>Time: {{ events.time }}</div>
+        <div>Price: {{ events.price }}</div>
+        <div>
+          Address : {{ events.location.address }}, {{ events.location.city }},
+          {{ events.location.country }}
+        </div>
+        <button (click)="handleClick()" class="btn btn-success">Click Me</button>
+      </div>
+</div>
